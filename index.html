@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delicioso Restaurant</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fffaf0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #8B0000;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #A52A2A;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #8B0000;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      max-width: 600px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about, .menu, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu-items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 10px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .menu-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Delicioso</h1>
+    <p>Fine Dining & Authentic Cuisine</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+<a href="menu.html">Menu</a>
+
+  <section class="hero">
+    <h2>Welcome to Delicioso — Where Taste Meets Elegance</h2>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About Us</h2>
+    <p>At Delicioso, we bring you a delightful experience with our hand-crafted dishes, warm ambiance, and exceptional service. Whether it's a casual dinner or a special celebration, we’re here to make it memorable.</p>
+  </section>
+
+  <section class="section menu" id="menu">
+    <h2>Our Signature Dishes</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/250x200/?pizza" alt="Pizza">
+        <h3>Italian Wood-Fired Pizza</h3>
+        <p>Authentic Neapolitan pizza baked in a stone oven with fresh basil and mozzarella.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/250x200/?pasta" alt="Pasta">
+        <h3>Classic Alfredo Pasta</h3>
+        <p>Creamy, rich Alfredo sauce tossed with handmade fettuccine noodles.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/250x200/?dessert" alt="Dessert">
+        <h3>Signature Tiramisu</h3>
+        <p>A delicate balance of coffee-soaked ladyfingers, mascarpone cream, and cocoa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Culinary Street, Foodie City, FL 45678</p>
+    <p>📞 (123) 456-7890</p>
+    <p>📧 reservations@delicioso.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Delicioso Restaurant | Crafted with ❤️</p>
+  </footer>
+
+</body>
+</html>
